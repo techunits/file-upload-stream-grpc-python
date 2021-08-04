@@ -17,5 +17,5 @@ def entry_request_iterator():
         yield entry_request
 
 # iterate through response stream and print to console
-for entry_response in stub.createBulkEntries(entry_request_iterator()):
+for entry_response in stub.FileUploadRequest(entry_request_iterator()):
     print(entry_response)
